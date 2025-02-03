@@ -1,0 +1,163 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Arial", sand-serif;
+}
+
+body {
+  background-color: #000;
+}
+
+body > a:visited {
+  color: white;
+}
+
+.container:first-child {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background-color: #000;
+}
+
+.container > header {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+  margin: 0px 10px;
+  background-color: #000;
+}
+
+.logo {
+  color: #28c2ff;
+  border-radius: 3px;
+  text-align: center;
+}
+
+#nav > li {
+  display: inline;
+  margin: 0 auto;
+}
+
+#nav > li > a {
+  color: #fff;
+  margin: 0 5px;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+#nav > li > a:hover {
+  color: #28c2ff;
+  transition: 0.3s ease-in-out;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  color: #000;
+}
+
+.sub {
+  margin: 0 auto;
+  width: 30%;
+  text-align: center;
+  border-radius: 2px;
+}
+
+.sub h2 {
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 20px;
+  color: white;
+}
+
+.article {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.article article img {
+  width: 100%;
+  border-radius: 3px;
+}
+
+.article article {
+  width: 22%;
+  margin: 30px 10px;
+}
+
+.article > article > header > time {
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 11px;
+}
+
+.article article > h3 {
+  margin: 5px 5px 0 0;
+  font-weight: bolder;
+}
+
+.article article > p {
+  margin: 5px 5px 0 0;
+  font-size: 13px;
+  text-align: justify;
+}
+
+#sports {
+  background-color: #fff;
+  margin-top: 100px;
+}
+
+#sub-sports {
+  background-color: #000;
+}
+
+#economy {
+  background-color: #fff;
+}
+
+#sub-economy {
+  background-color: #000;
+}
+
+#entertainment {
+  background-color: #fff;
+}
+
+#sub-entertainment {
+  background-color: #000;
+}
+
+#technology {
+  background-color: #fff;
+}
+
+#sub-technology {
+  background-color: #000;
+}
+
+.article-link {
+  background-color: #28c2ff;
+  font-weight: bolder;
+  align-items: center;
+  text-transform: uppercase;
+  width: 50%;
+  border-radius: 3px;
+  margin: 10px auto;
+  text-align: center;
+}
+
+.article-link > a {
+  color: #fff;
+}
+
+.article-link > a:hover {
+  color: rgb(255, 255, 255);
+  transition: ease-in-out 0.3s;
+}
