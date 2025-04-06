@@ -1,0 +1,51 @@
+//variáveis
+$corPrincipal: #182C61;
+$corSegundaria: #f5f6fa;
+$corBotoes: #44bd32;
+
+//modulos
+@use 'reset.scss';
+@use 'products.scss';
+@use 'mobile.scss';
+
+body {
+    background-color: $corSegundaria;
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: $corPrincipal;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 0;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu li {
+    font-weight: bold;
+    margin-left: 24px;
+}
+
+.menu li a {
+    color: $corSegundaria;
+    text-decoration: none;
+}
