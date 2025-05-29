@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, sans-serif;
+
+    .produtos {
+        max-width: 640px;
+        width: 100%;
+        margin: 56px auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 1%;
+
+        &__item {
+            background-color: #f5eded;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 10px;
+            text-align: center;
+
+            &--em-destaque {
+                background-color: #f5eded;
+                border-color: #0004ff; 
+                border-radius: 18px;
+            }
+        }
+
+        &__imagem {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        &__nome {
+            font-size: 1.25rem;
+            margin: 10px 0;
+            color: #1f2171;
+        }
+
+        &__descricao {
+            font-size: 1rem;
+            color: #666;
+        }
+    }
+}
