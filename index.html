@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador Github</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <main class="profile-container">
+        <div class="loading-overlay" id="loader">
+            <div class="spinner"></div>
+        </div>
+
+        <div class="banner"></div>
+        
+        <div class="avatar-container">
+            <img src="" alt="Avatar" class="profile-avatar" id="avatar">
+        </div>
+
+        <div class="info-section">
+            <h1 class="name" id="name">Carregando...</h1>
+            <a href="#" class="username" id="username" target="_blank">@...</a>
+            <p class="bio" id="bio">...</p>
+
+            <div class="stats-box">
+                <div class="stat-item">
+                    <span class="stat-value" id="repos">0</span>
+                    <span class="stat-label">Repos</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-value" id="followers">0</span>
+                    <span class="stat-label">Seguidores</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-value" id="following">0</span>
+                    <span class="stat-label">Seguindo</span>
+                </div>
+            </div>
+
+            <div class="actions">
+                <a href="#" class="btn btn-primary" id="follow-btn" target="_blank">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="8.5" cy="7" r="4"></circle>
+                        <line x1="20" y1="8" x2="20" y2="14"></line>
+                        <line x1="23" y1="11" x2="17" y2="11"></line>
+                    </svg>
+                    Seguir
+                </a>
+                <a href="#" class="btn btn-outline" id="link-btn" target="_blank">
+                    Ver Perfil
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <section class="search-section">
+        <span class="search-label">Procurar outro Dev</span>
+        <div class="search-bar">
+            <input type="text" class="search-input" id="search-input" placeholder="Digite o usuário (ex: SEUNOME)">
+            <button class="search-btn" id="search-btn">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+            </button>
+        </div>
+        <button id="reset-btn" class="back-btn">Voltar para fabricionovicki</button>
+    </section>
+
+    <script src="main.js"></script>
+</body>
+</html>
